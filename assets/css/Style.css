@@ -1658,7 +1658,7 @@ body {
 
 @media (max-width: 767px) {
   body .page-content {
-    padding: 0px 30px;
+    padding: 0px 10px;
   }
   .main-banner {
     text-align: center;

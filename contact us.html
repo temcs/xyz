@@ -173,6 +173,30 @@ https://templatemo.com/tm-579-cyborg-gaming
                           </div>
                         </div>                        
                         </div>
+
+                        <div class="vipmode">
+                          <h5 style="margin-top: 55px; text-align: center;">Weekly Bonus Calculator</h5>
+                          <label for="vipLevel">Select VIP Level:</label>
+                          <select id="vipLevel">
+                            <option value="0">Select VIP level</option>
+                            <option value="1">VIP 1-9</option>
+                            <option value="2">VIP 10-14</option>
+                            <option value="3">VIP 15-20</option>
+                            <option value="4">VIP 21-25</option>
+                            <option value="5">VIP 26-30</option>
+                            <option value="6">VIP 31-35</option>
+                            <option value="7">VIP 36-40</option>
+                            <option value="8">VIP 41-42</option>
+                            <option value="9">VIP 43-44</option>
+                            <option value="10">VIP 45-46</option>
+                            <option value="11">VIP 47-50</option>
+                        </select>
+
+<div style="color: white;" id="messageContainer">
+    <!-- Messages will be displayed here based on VIP level selection -->
+</div>
+</div>
+
                       </div>
                     </div>
                   </div>
@@ -181,8 +205,6 @@ https://templatemo.com/tm-579-cyborg-gaming
             </div>
           </div>
           <!-- ***** Banner End ***** -->
-
-          
         </div>
       </div>
     </div>
@@ -263,6 +285,56 @@ function randomOperation() {
 let interval = setInterval(randomOperation, 100); // Perform a random operation every 0.5 seconds
 
 // Optionally, you can clear the interval using clearInterval(interval) when needed
+
+
+//vip level
+const vipLevelSelect = document.getElementById('vipLevel');
+const messageContainer = document.getElementById('messageContainer');
+
+vipLevelSelect.addEventListener('change', function() {
+    const selectedVipLevel = parseInt(vipLevelSelect.value, 10);
+    let message = '';
+
+    switch (selectedVipLevel) {
+        case 1:
+            message = 'Deposit : 500 , Turnover: 500 , Bonus: 18tk.';
+            break;
+        case 2:
+            message = 'Deposit : 1000 , Turnover: 1000 , Bonus: 58tk.';
+            break;
+        case 3:
+            message = 'Deposit : 2000 , Turnover: 2000 , Bonus: 128tk.';
+            break;
+        case 4:
+            message = 'Deposit : 3000 , Turnover: 3000 , Bonus: 168tk.';
+            break;
+        case 5:
+            message = 'Deposit : 5000 , Turnover: 5000 , Bonus: 328tk.';
+            break;
+        case 6:
+            message = 'Deposit : 10000 , Turnover: 10000 , Bonus: 588tk.';
+            break;
+        case 7:
+            message = 'Deposit : 20000 , Turnover: 20000 , Bonus: 688tk.';
+            break;
+        case 8:
+            message = 'Deposit : 30000 , Turnover: 30000 , Bonus: 1088tk.';
+            break;
+        case 9:
+            message = 'Deposit : 50000 , Turnover: 50000 , Bonus: 1588tk.';
+            break;
+        case 10:
+            message = 'Deposit : 75000 , Turnover: 75000 , Bonus: 2388tk.';
+            break;
+        case 11:
+            message = 'Deposit : 100000 , Turnover: 100000 , Bonus: 2888tk.';
+            break;
+        default:
+            message = 'Please select a Vip level.';
+    }
+
+    messageContainer.textContent = message;
+});
   </script>
 
 

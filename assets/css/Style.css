@@ -765,8 +765,19 @@ Banner Style
 .main-banner h6 {
   font-size: 20px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 25px;
+  -webkit-animation: glow .8s ease-in-out infinite alternate;
+  -moz-animation: glow .8s ease-in-out infinite alternate;
+  animation: glow .8s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1f4bff, 0 0 40px #1f4bff, 0 0 50px #1f4bff, 0 0 60px #1f4bff, 0 0 70px #1f4bff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #5c7cff, 0 0 40px #5c7cff, 0 0 50px #5c7cff, 0 0 60px #5c7cff, 0 0 70px #5c7cff, 0 0 80px #5c7cff;
+  }
 }
 
 .main-banner h4 {
@@ -960,6 +971,13 @@ footer p a {
 
 footer p a:hover {
   color: #ec6090;
+}
+
+
+
+
+#hdn img{
+ width: 150px;
 }
 
 /* 
@@ -1303,6 +1321,35 @@ Featured Banner Style
 
 /* 
 ---------------------------------------------
+vip mode
+--------------------------------------------- 
+*/
+
+.vipmode{
+  width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#vipLevel{
+  padding: 8px;
+  border-radius: 23px;
+  background: #27292a;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+
+
+/* 
+---------------------------------------------
 Game Details Style
 --------------------------------------------- 
 */
@@ -1402,6 +1449,24 @@ Game Details Style
   transform: scale(1.09);
   transition: 0.1s ease-in-out;
 }
+/* 
+---------------------------------------------
+count
+--------------------------------------------- 
+*/
+
+
+
+
+
+/* 
+---------------------------------------------
+count
+--------------------------------------------- 
+*/
+
+
+
 /* 
 ---------------------------------------------
 Other Related Style

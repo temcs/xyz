@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
             var progress = 0;
             var interval = setInterval(function() {
                 progress += 1;
-                loadingOverlay.textContent = 'Downloading ' + progress + '%';
+                loadingOverlay.textContent = 'Connecting ' + progress + '%';
                 if (progress >= 100) {
                     clearInterval(interval);
                     // Change text to "Downloaded"
-                    loadingOverlay.textContent = 'Downloaded ✔️';
+                    loadingOverlay.textContent = 'Download Start ✔️';
                     // After 2 seconds, hide loading overlay
                     setTimeout(function() {
                         loadingOverlay.classList.remove('active');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         window.location.href = downloadButton.href;
                     }, 2000);
                 }
-            }, 80); // Adjust the interval here for faster counting
+            }, 10); // Adjust the interval here for faster counting
         });
     });
 });

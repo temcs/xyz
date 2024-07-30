@@ -840,10 +840,10 @@ Most Popular Style
 }
 
 .most-popular .item video {
-  min-height: 350px;
-    max-height: 350px;
-    min-width: 98%;
-    max-width: 98%;
+    min-height: 350px;
+    max-height: 570px;
+    min-width: 100%;
+    max-width: 100%;
     border-radius: 12px;
 }
 

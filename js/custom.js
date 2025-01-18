@@ -115,6 +115,28 @@ if (!clickDiv || !hiddenDiv) {
 }
 
 
+
+//lazy load videos
+
+const videos = document.querySelectorAll("video");
+
+const lazyLoadVideos = () => {
+  videos.forEach((video) => {
+    const rect = video.getBoundingClientRect();
+    const inViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+    if (inViewport && video.dataset.src) {
+      const source = video.querySelector("source");
+      source.src = source.dataset.src; // Move data-src to src
+      video.load(); // Load the video
+      delete source.dataset.src; // Remove the data-src attribute
+    }
+  });
+};
+
+window.addEventListener("scroll", lazyLoadVideos);
+
+
 //share button
 
 function shareVideo(buttonElement) {

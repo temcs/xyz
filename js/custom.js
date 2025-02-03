@@ -91,7 +91,7 @@ $(function(){
         var index = 0;
         setInterval(function() {
             shakeChild(index);
-            index = (index + 1) % 3;
+            index = (index + 1) % 4;
         }, 3000); // Repeat the animation every 3 seconds
     }
     

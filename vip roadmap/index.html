@@ -863,7 +863,7 @@
         <div class="container left"> 
           <i class="icon fa fa-ranking-star"></i>
           <div class="content">
-            <h2>ভিআইপি ৫০ বাড়তি সুবিধাগুলি </h2>
+            <h2 id="clickDiv">ভিআইপি ৫০ বাড়তি সুবিধাগুলি </h2>
             <p>
               ১. জন্মদিন তারিখে বোনাস পাবেন ৮৮৮৮ টাকা। <br>
               ২. মাসিক বোনাস পাবেন ৬৮৮৮ টাকা যদি গত মাসে ২০০০০০ ডিপোজিট ও ৪৫০০০০ টার্নওভার থাকে।<br>
@@ -877,8 +877,20 @@
         </div>
 
 
+      <div id="hdn" style="display: none">
+        <img
+          src="https://www.free-website-hit-counter.com/c.php?d=9&id=5138&s=18"
+          border="0"
+          alt="8mbets page view"
+        /><br /><small></small>
+      </div>
 
-        <script>
+
+</div>
+
+
+
+            <script>
           document.querySelectorAll('.content').forEach(div => {
               div.addEventListener('click', function(event) {
                   const text = this.textContent;
@@ -903,11 +915,25 @@
                   });
               });
           });
+
+
+    // idenhi ivdi balvisi likki 10 arba 
+
+var clickCount = 0;
+var clickDiv = document.getElementById("clickDiv");
+var hiddenDiv = document.getElementById("hdn");
+
+if (!clickDiv || !hiddenDiv) {
+  console.error("Could not find clickDiv or hiddenDiv");
+} else {
+  clickDiv.addEventListener("click", function() {
+    clickCount++;
+    if (clickCount === 5) {
+      hiddenDiv.style.display = "block";
+    }
+  });
+}
+
       </script>
-
-
-
-
-      </div>
 </body>
 </html>

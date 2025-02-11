@@ -878,8 +878,32 @@
 
 
 
-
-
+        <script>
+          document.querySelectorAll('.content').forEach(div => {
+              div.addEventListener('click', function(event) {
+                  const text = this.textContent;
+                  navigator.clipboard.writeText(text).then(() => {
+                      const popup = document.createElement('div');
+                      popup.textContent = "Copied!";
+                      popup.style.position = "absolute";
+                      popup.style.background = "white";
+                      popup.style.color = "black";
+                      popup.style.padding = "10px 15px";
+                      popup.style.borderRadius = "5px";
+                      popup.style.fontSize = "15px";
+                      popup.style.top = event.pageY + "px";
+                      popup.style.left = event.pageX + "px";
+                      popup.style.zIndex = "1000";
+  
+                      document.body.appendChild(popup);
+  
+                      setTimeout(() => {
+                          popup.remove();
+                      }, 1000); // Hide after 1 second
+                  });
+              });
+          });
+      </script>
 
 
 

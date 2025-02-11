@@ -157,19 +157,19 @@ body {
 .container .content p {
   margin: 0;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 25px;
   color: #000000;
 }
 
 @media (max-width: 767.98px) {
   .timeline::after {
-    left: 90px;
+    left: 25px;
   }
 
   .container {
     width: 100%;
-    padding-left: 120px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 5px;
   }
 
   .container.right {
@@ -178,12 +178,12 @@ body {
 
   .container.left::after, 
   .container.right::after {
-    left: 82px;
+    left: 17px;
   }
 
   .container.left::before,
   .container.right::before {
-    left: 100px;
+    left: 20px;
     border-color: transparent #006E51 transparent transparent;
   }
 
@@ -196,12 +196,12 @@ body {
   .container.left .icon,
   .container.right .icon {
     right: auto;
-    left: 105px;
+    left: 40px;
   }
 
   .container.left .content,
   .container.right .content {
-    padding: 15px 15px 15px 30px;
+    padding: 5px 5px 5px 25px;
     border-radius: 50px 15px 15px 50px;
   }
 }

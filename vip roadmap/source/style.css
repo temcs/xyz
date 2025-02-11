@@ -48,6 +48,7 @@ body {
   position: relative;
   background: inherit;
   width: 50%;
+  cursor: pointer;
 }
 
 .container.left {

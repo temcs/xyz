@@ -8,8 +8,9 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: #000000;
+  scroll-behavior: smooth;
 }
-.tittle-top{
+.tittle-top {
   width: 100%;
   display: flex;
   color: white;
@@ -20,10 +21,24 @@ body {
   align-items: center;
 }
 .tittle-top a {
+  text-decoration: none;
   padding: 0px 50px 0 50px;
   color: white;
   font-size: 30px;
 }
+.tittle-top i {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tittle-top i span {
+  margin-top: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: cursive;
+}
+
 .timeline {
   position: relative;
   width: 100%;
@@ -33,7 +48,7 @@ body {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   background: #ffffff;
@@ -60,7 +75,7 @@ body {
 }
 
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -77,7 +92,7 @@ body {
 }
 
 .container::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 2px;
@@ -145,7 +160,7 @@ body {
 
 .container.right .content {
   padding: 30px 30px 30px 90px;
-  border-radius:  50px 15px 15px 50px ;
+  border-radius: 50px 15px 15px 50px;
 }
 
 .container .content h2 {
@@ -166,7 +181,7 @@ body {
   .timeline::after {
     left: 25px;
   }
-  .tittle-top h1{
+  .tittle-top h1 {
     font-size: 20px;
   }
   .tittle-top a {
@@ -184,7 +199,7 @@ body {
     left: 0%;
   }
 
-  .container.left::after, 
+  .container.left::after,
   .container.right::after {
     left: 17px;
   }
@@ -192,7 +207,7 @@ body {
   .container.left::before,
   .container.right::before {
     left: 20px;
-    border-color: transparent #006E51 transparent transparent;
+    border-color: transparent #006e51 transparent transparent;
   }
 
   .container.left .date,

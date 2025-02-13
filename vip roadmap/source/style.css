@@ -153,7 +153,7 @@ body {
 
 .container .content {
   padding: 30px 90px 30px 30px;
-  background: #e6b000;
+  /* background: #e6b000; */
   position: relative;
   border-radius: 15px 50px 50px 15px;
 }
@@ -168,15 +168,47 @@ body {
   font-size: 20px;
   font-weight: normal;
   color: #ffffff;
+  text-shadow: 2px -3px 5px black;
 }
+
 
 .container .content p {
   margin: 0;
   font-size: 16px;
   line-height: 25px;
-  color: #000000;
+  color: #ffffff;
+}
+.v1-10 {
+  background-size: 100% 100%;
+  background-image: url(../source/imgasset/1-10.png);
+  background-repeat: no-repeat;
+  text-shadow: 2px -2px 8px black;
 }
 
+.v11-20 {
+  background-size: 100% 100%;
+  background-image: url(../source/imgasset/11-20.png);
+  background-repeat: no-repeat;
+  text-shadow: 2px -2px 8px black;
+}
+.v21-30 {
+  background-size: 100% 100%;
+  background-image: url(../source/imgasset/21-30.png);
+  background-repeat: no-repeat;
+  text-shadow: 2px -2px 8px black;
+}
+.v31-40 {
+  background-size: 100% 100%;
+  background-image: url(../source/imgasset/31-40.png);
+  background-repeat: no-repeat;
+  text-shadow: 2px -2px 8px black;
+}
+.v41-50 {
+  background-size: 100% 100%;
+  background-image: url(../source/imgasset/4150.png);
+  background-repeat: no-repeat;
+  text-shadow: 2px -2px 8px black;
+}
 @media (max-width: 767.98px) {
   .timeline::after {
     left: 25px;

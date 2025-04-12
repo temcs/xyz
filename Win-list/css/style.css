@@ -1,0 +1,74 @@
+::selection {
+    color: rgb(28, 255, 84);
+    background: #fc0000;
+}
+body{
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.main{
+width: 100%;
+height: 100vh;
+color: rgb(255, 255, 255);           
+/* background-image: url(https://i.gifer.com/origin/c5/c5056fe916b043776e98d6149847ffbd.gif); */
+background-image: url(https://i.gifer.com/origin/df/df3dc4d071bd97b96b40e584d015f9d1_w200.gif);
+/* background-repeat: no-repeat;
+background-size: 100% 100%; */
+background-attachment: fixed; /* Fix the background image */
+overflow: auto; /* Allow scrolling within the .main div if content overflows */
+margin: 0;
+padding: 0;
+}
+.sub{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span,p {
+display: inline-block;
+}
+button{
+background: #000000;
+color: #6fc5cf;
+border-radius: 10px;
+padding: 10px;
+border: .1px solid #00a1d1;
+font-size: 14px;
+font-family: cursive;
+font-weight: 900;
+cursor: pointer;
+box-shadow: -2px -2px 6px #82d4f3;
+}
+button:hover {
+    border: .1px solid #ffffff;
+    box-shadow: -2px -2px 6px white;
+    color: #ffffff;
+}
+
+#loading-overlay {
+width: 150px;
+height: 50px;
+display: none;
+position: fixed;
+top: 10%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgb(1, 134, 46);
+color: white;
+font-size: 16px;
+text-align: center;
+line-height: 50px;
+border-radius: 5px;
+padding: 5px 20px 5px 20px;
+}
+#loading-overlay.active {
+ display: block;
+}
+
+
+#gameList span{
+    width: 100%;
+    padding: 10px;
+}

@@ -79,6 +79,24 @@ fetch('https://raw.githubusercontent.com/temcs/jsdata/refs/heads/main/8mdata.js'
   setTimeout(function() {
     location.reload();
   }, 30 * 60 * 1000); // 30 minutes * 60 seconds * 1000 milliseconds
+
+
+    // idenhi ivdi balvisi likki 10 arba 
+
+var clickCount = 0;
+var clickDiv = document.getElementById("clickDiv");
+var hiddenDiv = document.getElementById("hdn");
+
+if (!clickDiv || !hiddenDiv) {
+  console.error("Could not find clickDiv or hiddenDiv");
+} else {
+  clickDiv.addEventListener("click", function() {
+    clickCount++;
+    if (clickCount === 5) {
+      hiddenDiv.style.display = "block";
+    }
+  });
+}
   
   
   
